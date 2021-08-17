@@ -1,0 +1,14 @@
+# Localization
+#
+# Replace the following placeholders with the correct values for
+# your installation.
+#
+
+en:
+  lib_guides_database_search:
+    display_name: "LibGuides Databases"
+    short_display_name: "LibGuides Databases"
+    search_form_placeholder: "Search LibGuides Databases"
+    module_callout: "Search LibGuides Databases"
+    error_service_message: "searching LibGuides Databases"
+    no_results_service_message: "a different search from LibGuides Databases"
