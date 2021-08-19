@@ -16,7 +16,7 @@ module QuickSearch
     end
 
     def results
-      @results_list ||= @result_nodes.map do |node|
+      @results ||= @result_nodes.map do |node|
         title_node = node.at_css('.s-lg-az-result-title')
         OpenStruct.new(
           title: title_node.text.strip,
@@ -47,7 +47,7 @@ module QuickSearch
       end
 
       def loaded_link_template
-        @url_template ||=
+        @loaded_link_template ||=
           Addressable::Template.new(QuickSearch::Engine::LIB_GUIDES_DATABASE_CONFIG['loaded_link_template'])
       end
   end
