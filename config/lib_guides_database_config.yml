@@ -1,0 +1,16 @@
+defaults: &defaults
+  query_template: <%= ENV['LIB_GUIDES_DATABASE_QUERY_TEMPLATE'] %>
+  loaded_link_template: <%= ENV['LIB_GUIDES_DATABASE_LOADED_LINK_TEMPLATE'] %>
+  no_results_link: <%= ENV['LIB_GUIDES_DATABASE_NO_RESULTS_LINK'] %>
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults
